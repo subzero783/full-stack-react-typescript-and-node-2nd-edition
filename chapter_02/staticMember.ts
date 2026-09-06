@@ -1,3 +1,5 @@
+
+
 // class ClassA {
 //     static typeName: string;
 

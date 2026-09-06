@@ -21,6 +21,6 @@ class Speaker {
     }
 }
 const speaker = new Speaker("John");
-speaker.message = "hello";
+speaker.Message = "hello";
 console.log(speaker.Message);
 //# sourceMappingURL=getSet.js.map
