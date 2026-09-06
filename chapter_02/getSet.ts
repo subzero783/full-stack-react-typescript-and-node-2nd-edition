@@ -15,12 +15,12 @@ class Speaker {
     set Message(val: string) {
         let tmpMessage = val;
         if (!val.includes(this.name)) {
-            tmpMessage = this.name + " " + val;
+            tmpMessage = this.name + " says: " + val;
         }
         this.#message = tmpMessage;
     }
 }
 
-const speaker = new Speaker("john");
+const speaker = new Speaker("John");
 speaker.Message = "hello";
 console.log(speaker.Message);

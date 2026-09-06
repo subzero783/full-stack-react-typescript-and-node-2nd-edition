@@ -15,12 +15,12 @@ class Speaker {
     set Message(val) {
         let tmpMessage = val;
         if (!val.includes(this.name)) {
-            tmpMessage = this.name + " " + val;
+            tmpMessage = this.name + " says: " + val;
         }
         this.#message = tmpMessage;
     }
 }
-const speaker = new Speaker("john");
-speaker.Message = "hello";
+const speaker = new Speaker("John");
+speaker.message = "hello";
 console.log(speaker.Message);
 //# sourceMappingURL=getSet.js.map
