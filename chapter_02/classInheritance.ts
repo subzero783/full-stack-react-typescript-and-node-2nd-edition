@@ -1,3 +1,4 @@
+
 class Vehicle {
     protected wheelCount: number;
     constructor(wheelCount: number) {
@@ -7,6 +8,7 @@ class Vehicle {
         console.log(`wheels: ${this.wheelCount}`);
     }
 }
+
 class Motorcycle extends Vehicle {
     constructor() {
         super(2);
@@ -15,13 +17,14 @@ class Motorcycle extends Vehicle {
         this.wheelCount = newWheelCount;
     }
 }
+
 class Automobile extends Vehicle {
     constructor() {
         super(4);
     }
 }
+
 const motorCycle = new Motorcycle();
-motorCycle.updateWheelCount(3);
 motorCycle.showNumberOfWheels();
 const autoMobile = new Automobile();
 autoMobile.showNumberOfWheels();

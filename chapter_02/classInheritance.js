@@ -23,7 +23,6 @@ class Automobile extends Vehicle {
     }
 }
 const motorCycle = new Motorcycle();
-motorCycle.updateWheelCount(3);
 motorCycle.showNumberOfWheels();
 const autoMobile = new Automobile();
 autoMobile.showNumberOfWheels();
